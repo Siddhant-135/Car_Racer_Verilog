@@ -14,6 +14,8 @@ A hardware-native implementation of the classic "Road Fighter" arcade game, buil
 * **FSM Control Logic:** Robust Finite State Machine to handle game states: `START`, `IDLE`, `MOVE_LEFT`, `MOVE_RIGHT`, and `COLLIDE`.
 
 ## 📂 Project Structure
+
+'''
 ├── src/
 │   ├── Display_sprite.v      # Main rendering engine 
 │   ├── car_fsm.v             # Main Game Logic, FSM diagram given oater
@@ -31,6 +33,7 @@ A hardware-native implementation of the classic "Road Fighter" arcade game, buil
 │   └── testbench.v  
 ├── Images/
 └── README.md
+'''
 
 <p align="center">
   <img src="images/fsm.png" width="500">
