@@ -14,15 +14,13 @@ A hardware-native implementation of the classic "Road Fighter" arcade game, buil
 * **FSM Control Logic:** Robust Finite State Machine to handle game states: `START`, `IDLE`, `MOVE_LEFT`, `MOVE_RIGHT`, and `COLLIDE`.
 
 ## 📂 Project Structure
-
-'''
+```text
 ├── src/
-│   ├── Display_sprite.v      # Main rendering engine 
-│   ├── car_fsm.v             # Main Game Logic, FSM diagram given oater
-│   ├── clk_divider.v         # makes larger clock to process everything
-│   ├── vert_counter.v        # counts number of vertical ticks
-│   ├── VGA_driver.v          # Communication through VGA channel to monitor
-│   ├── Horiz_counter.v       # counts each horizontal tick
+│   ├── display_sprite.v      # Main rendering engine 
+│   ├── car_fsm.v             # Main game logic (FSM; diagram provided below)
+│   ├── clk_divider.v         # Clock divider for game logic timing
+│   ├── VGA_driver.v          # VGA signal generation and synchronization
+│   ├── horiz_counter.v       # counts each horizontal tick
 │   └── vert_counter.v        # counts number of vertical ticks
 ├── assets/
 │   ├── bg_rom.coe            # Road and background pixel data (12-bit RGB)
@@ -33,7 +31,7 @@ A hardware-native implementation of the classic "Road Fighter" arcade game, buil
 │   └── testbench.v  
 ├── Images/
 └── README.md
-'''
+```
 
 <p align="center">
   <img src="images/fsm.png" width="500">
